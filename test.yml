@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - custom_module:
+      when: false
+
+- hosts: localhost
+  gather_facts: no
+  tasks:
+    - command: echo hi
+    - custom_module:
